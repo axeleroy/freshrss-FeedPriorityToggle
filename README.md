@@ -1,23 +1,24 @@
-# FreshRSS extensions
+# Feed Priority Toggle
 
-> **NOTE for edge users**: please use the versions in [edge branch](https://github.com/aidistan/freshrss-extensions/tree/edge) instead.
+A fork of [@aidistan](https://github.com/aidistan)'s [Feed Priority Shortcut](https://github.com/aidistan/freshrss-extensions)
+that toggles feeds visibility between the main feed and their respective categories.
 
-This repository contains all my custom FreshRSS extensions.
+## Why?
+
+I have been using the original extension for about two years to hide feeds in
+order to avoid spoilers of sporting events. Because I only toggled between the
+main feed and category visibilities, I modified it so it would only require me
+a single click.
 
 ## How to install?
 
 ```sh
 # Clone this repository
 cd /var/www/FreshRSS/extensions
-git clone --depth=1 https://github.com/aidistan/freshrss-extensions.git aidistan-extensions
-
-# Checkout the edge branch (optional, only for edge users)
-cd aidistan-extensions
-git checkout edge
-cd ..
+git clone --depth=1 https://github.com/axeleroy/freshrss-FeedPriorityToogle.git axeleroy-extensions
 
 # Copy the desired extension
-cp -r aidistan-extensions/xExtension-XXX .
+cp -r axeleroy-extensions/xExtension-XXX .
 ```
 
 See also: https://freshrss.github.io/FreshRSS/en/admins/15_extensions.html#how-to-install
@@ -26,7 +27,7 @@ See also: https://freshrss.github.io/FreshRSS/en/admins/15_extensions.html#how-t
 
 ```sh
 # Update the repository
-cd /var/www/FreshRSS/extensions/aidistan-extensions
+cd /var/www/FreshRSS/extensions/axeleroy-extensions
 git pull
 cd ..
 
@@ -34,19 +35,5 @@ cd ..
 rm -rf xExtension-XXX
 
 # Copy the new version
-cp -r aidistan-extensions/xExtension-XXX .
+cp -r axeleroy-extensions/xExtension-XXX .
 ```
-
-## Quick glance
-
-### Theme Mode Synchronizer
-
-Synchronize the theme with your system light/dark mode
-
-https://user-images.githubusercontent.com/3037661/185191808-af1e375c-e9e5-41ca-942a-8b714f50a774.mp4
-
-### Feed Priority Shortcut
-
-Set up visibilities/priorities of your feeds easily
-
-![](https://user-images.githubusercontent.com/3037661/186879158-5349e59f-54db-47cc-bd40-b21325d91672.png)
