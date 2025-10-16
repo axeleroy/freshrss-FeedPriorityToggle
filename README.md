@@ -7,8 +7,8 @@ that toggles feeds visibility between the main feed and their respective categor
 
 I have been using the original extension for about two years to hide feeds in
 order to avoid spoilers of sporting events. Because I only toggled between the
-main feed and category visibilities, I modified it so it would only require me
-a single click.
+main feed and category visibilities, I modified it so that it would only require
+me a single click.
 
 ## How to install?
 
