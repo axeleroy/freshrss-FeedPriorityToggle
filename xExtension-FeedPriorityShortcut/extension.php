@@ -1,6 +1,6 @@
 <?php
 
-class FeedPriorityShortcutExtension extends Minz_Extension {
+class FeedPriorityToggleExtension extends Minz_Extension {
 
     public function init() {
         if (Minz_Request::controllerName() == 'subscription' && Minz_Request::actionName() == 'index') {
@@ -27,7 +27,7 @@ class FeedPriorityShortcutExtension extends Minz_Extension {
     public function provideFeedPrioritiesInJS($vars) {
         $feedDAO = FreshRSS_Factory::createFeedDao();
 
-        return array_merge($vars, ['FeedPriorityShortcut' => [
+        return array_merge($vars, ['FeedPriorityToggle' => [
             'postUrl' => _url('extension', 'configure', 'e', $this->getName()),
             'priority' => array_map(function($feed) {
                 return [

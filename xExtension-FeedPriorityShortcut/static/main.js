@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
 
     (() => {
-        const context = window.context.extensions.FeedPriorityShortcut
+        const context = window.context.extensions.FeedPriorityToggle
 
         // Decode double-html-encoded postUrl
         const txt = document.createElement('textarea')
@@ -15,8 +15,8 @@ window.addEventListener('load', () => {
         if (!li.dataset.feedId) { return }
 
         const i = li.dataset.feedId
-        const p = context.extensions.FeedPriorityShortcut.priority[i]
-        const t = context.extensions.FeedPriorityShortcut.tooltips
+        const p = context.extensions.FeedPriorityToggle.priority[i]
+        const t = context.extensions.FeedPriorityToggle.tooltips
 	const d = document.createElement('button');
         
 	d.title = 'Toggle priority';
@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
             } else {
                 priority = '🏠'
             }
-            fetch(context.extensions.FeedPriorityShortcut.postUrl, {
+            fetch(context.extensions.FeedPriorityToggle.postUrl, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

@@ -15,7 +15,7 @@ me a single click.
 ```sh
 # Clone this repository
 cd /var/www/FreshRSS/extensions
-git clone --depth=1 https://github.com/axeleroy/freshrss-FeedPriorityToogle.git axeleroy-extensions
+git clone --depth=1 https://github.com/axeleroy/freshrss-FeedPriorityToggle.git axeleroy-extensions
 
 # Copy the desired extension
 cp -r axeleroy-extensions/xExtension-XXX .

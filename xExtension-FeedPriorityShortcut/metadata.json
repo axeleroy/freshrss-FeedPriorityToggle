@@ -1,8 +1,8 @@
 {
-    "name": "Feed Priority Shortcut",
-    "author": "Aidi Stan",
-    "description": "Set up visibilities/priorities of your feeds easily",
+    "name": "Feed Priority Toggle",
+    "author": "Axel Leroy",
+    "description": "Toggle feed visibility easily",
     "version": "1.1.1",
-    "entrypoint": "FeedPriorityShortcut",
+    "entrypoint": "FeedPriorityToggle",
     "type": "user"
 }
